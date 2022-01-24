@@ -1,14 +1,50 @@
 #include "Freezer.h"
 Freezer::Freezer() :
     GoodBasic{ 0, 1, "noname", "nodescription" } {
-    _cameras = 1;
-    _weight = 10;
+    fillProperties(2, 5);
+}
+
+Freezer::Freezer(int id):
+    GoodBasic{ id, 1, "noname", "nodescription" } {
+    fillProperties(2, 5);
+}
+
+Freezer::Freezer(int id, int price) :
+    GoodBasic{ id, price, "noname", "nodescription" } {
+    fillProperties(2, 5);
+}
+
+Freezer::Freezer(int id, int price, string name) :
+    GoodBasic{ 0, 1, "noname", "nodescription" } {
+    fillProperties(2, 5);
+}
+
+Freezer::Freezer(int id, int price, string name, string description, int cam) :
+    GoodBasic{ id, price, name, description } {
+    fillProperties(cam, 5);
 }
 
 Freezer::Freezer(int id, int price, string name, string description, int cam, int weight) :
     GoodBasic{ id, price, name, description } {
+    fillProperties(cam, weight);
+}
+
+Freezer::Freezer(int id, int price, string name, string description, int cam, int weight, string newValue) 
+{
+    fillProperties(cam, weight, newValue);
+}
+
+void Freezer::fillProperties(int cam, int weight)
+{
     _cameras = cam;
     _weight = weight;
+}
+
+void Freezer::fillProperties(int cam, int weight)
+{
+    _cameras = cam;
+    _weight = weight;
+    _newProperty = newVal;
 }
 
 int Freezer::getCameras() {

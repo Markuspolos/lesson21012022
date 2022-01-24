@@ -1,0 +1,3 @@
+﻿  ConsoleApplicationOOP.cpp
+ConsoleApplicationOOP.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall WorkClass::startWork(void)" (?startWork@WorkClass@@QAEXXZ) в функции _main.
+C:\Users\aks17\OneDrive\Рабочий стол\ООП 2021-2022\lesson202201213\Debug\lesson202201213.exe : fatal error LNK1120: неразрешенных внешних элементов: 1

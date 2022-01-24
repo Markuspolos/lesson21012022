@@ -9,6 +9,6 @@ void WorkClass::startWork() {
     GoodBasic* universalPointer03 = new Software(1, 234, "Soft FOR Samsung", "Very Good thing...", 2, 34);
 
     static_cast<GoodBasic*>(universalPointer01)->toString();
-    static_cast<GoodBasic*>(universalPointer02)->toString();
-    static_cast<GoodBasic*>(universalPointer03)->toString();
+    static_cast<Freezer*>(universalPointer02)->toString();
+    static_cast<Software*>(universalPointer03)->toString();
 }
